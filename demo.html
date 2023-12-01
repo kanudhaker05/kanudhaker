@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="demo.css">
+  <script src="https://kit.fontawesome.com/fec363680f.js"></script>
+  
+</head>
+<body>
+
+<!-- navabr -->
+  
+<div id="home" class="hero">
+    <nav>
+      <img class="menu-img" src="images/menu.png" alt="">
+     
+        <h1><a href="#home">kanu<span style="color:#2C9265;">Dhaker</span></a></h1>
+    
+      <!-- <img class="logo" src="images/logo.png" alt=""> -->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">Certificates</a></li>
+        <li><a href="#contact">Contacts</a></li>
+
+      </ul>
+
+      <button onclick="toggleBtn()" id="btn" type="button"><span></span></button>
+    </nav>
+
+  <div class="lamp-container">
+    <img class="lamp" src="images/lamp.png" alt="">
+    <img class="light" src="images/light.png" id="light" alt="">
+  </div>
+ 
+  <div class="text-container">
+    <p class="who">$/WHOAMI?</p>
+    <h1>I'm Kanu Dhaker</h1>
+    <p class="it">B.Tech Information Technology </p>
+    <a href="#about">ABOUT ME</a>
+  
+    <div class="control">
+      <p>00</p>
+      <div class="line"> <span></span></div>
+      <p>01</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- about section -->
+
+<section id="about" class="about-section">
+
+  <div class="sectiondiv">
+    <div class="about-text">
+
+      <p>A LITTLE BIT </p>
+      <h1>ABOUT ME</h1>
+      <p>CYBER SECURITY / WEB DEVELOPMENT / PROBLEM SOLVING </p>
+      <p>Hi there! 👋 I'm a B.Tech Information Technology student with a passion for all things tech. I love exploring the exciting worlds of cybersecurity, web design, and problem-solving.
+
+        <br>When it comes to technology, I'm your go-to person. I enjoy diving into the nitty-gritty of coding and finding creative solutions to challenges. Whether it's making websites look awesome or figuring out how to keep things secure online, I'm up for the task.
+        
+        <br>Being a problem solver is my superpower. I see challenges as opportunities to learn and grow. As a student, I'm not just into the theoretical stuff—I'm hands-on, getting into the practical side of IT.
+        
+        <br>Cybersecurity is my jam. I get a thrill out of understanding how to keep information safe and sound in the digital world. It's like being a digital superhero, ensuring that everything runs smoothly and securely.
+        
+        </p>
+      <p>Email: <span class="aboutemail">kanudhaker94@gmail.com</span></p>
+      <p>place: <span class="aboutaddress">jaipur, Rajasthan 302033</span></p>
+        
+    </div>
+
+    <div class="imgsec">
+      <img class="coderimg" src="images/coder.png" alt="">
+    </div>
+  </div>
+
+</section>
+
+
+<!-- footer  -->
+
+
+<footer id="contact">
+  <div class="row">
+    <div class="col">
+      <img class="logo" src="logoimage.png" alt="">
+      <p>Thank you for visiting my personal portfolio website. Connect with me over socials!</p>
+      
+    </div>
+
+    <div class="col">
+      <h4>Contact Info <div class="underline"><span></span></div></h4>
+      <p style="margin-bottom: 15px;"><i class="fa-solid fa-phone"></i>+91-XXX-XXX-XXXX</p>
+      <p style="margin-bottom: 15px;"><i class="fa-solid fa-envelope"></i>kanudhaker94@gmail.com</p>
+      <p style="margin-bottom: 15px;"><i class="fa-solid fa-location-dot"></i>Jaipur, Raj 302033</p>
+
+    </div>
+
+    <div class="col">
+      <h4>Quick Links <div class="underline"><span></span></div> </h4>
+      <ul class=" ul-li">
+        <li><a href="#home"> <i class="fa-solid fa-circle-arrow-right"></i> Home</a></li>
+        <li><a href="#about"> <i class="fa-solid fa-circle-arrow-right"></i> About</a></li>
+        <li><a href=""><i class="fa-solid fa-circle-arrow-right"></i> Skills</a></li>
+        <li><a href=""><i class="fa-solid fa-circle-arrow-right"></i> Education</a></li>
+        <li><a href=""><i class="fa-solid fa-circle-arrow-right"></i> work</a></li>
+        <li><a href=""><i class="fa-solid fa-circle-arrow-right"></i> Certificates</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-circle-arrow-right"></i> Contacts</a></li>
+
+      </ul>
+    </div>
+
+    <div class="col">
+      <h4>Feedback <div class="underline"><span></span></div></h4>
+      <form>
+        <i class="fa-regular fa-message"></i>
+        <input type="text" placeholder="Drop Your Feedback . . . ." required>
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+
+    <div class="social-icons">
+      <a href=" "> <i class="fa-brands fa-square-x-twitter"></i>  </a>
+      <a href=" "> <i class="fa-brands fa-square-instagram"></i> </a>
+      <a href=" "> <i class="fa-brands fa-linkedin"></i> </a>
+      <a href=" "> <i class="fa-brands fa-square-github"></i> </a>
+      <a href=" "> <i class="fa-brands fa-square-whatsapp"></i> </a>
+      
+  
+    </div>
+    </div>
+  </div>
+
+  <hr>
+  <p class="copyright">Desigend By <span class="text-yellow-500">Kanu Dhaker</span></p>
+
+</footer>
+
+
+
+<script>
+  var btn = document.getElementById("btn");
+  var light = document.getElementById("light");
+  function toggleBtn(){
+    btn.classList.toggle("active");
+    light.classList.toggle("on");
+     
+  }
+</script>
+
+</body>
+</html>
